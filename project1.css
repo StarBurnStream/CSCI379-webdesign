@@ -44,16 +44,19 @@ body a{
 	margin-right: auto;
 }
 	
+.sample{
+	clear:both;
+	padding:10px;
+	background-color:rgba(100,255,100,0.1);
+}
+	
 .box{
+	
 	border-width: 1px;
 	border-style: solid;
     border-color: black;
 	display: block;
 	padding: 10px;
-}
-
-div{
-	display: block;
 }
 
 .row{
@@ -66,26 +69,60 @@ div{
 	padding:10px;
 }
 
-.empty{
-	clear: both;
-}
 
 .heading{
 	float: left;
 	max-width: 100%;
 	max-height: 100%;
 	width: 100%;
+	padding:10px;
+	background-color:rgba(0,0,255,0.1);
 }
 
 .selfie{
-	position: absolute;
-	top: 5px;
-	right: 0px;
+	position:absolute;
+	right:10px;
+	top:20px;
 }
 
+.selfie img{
+	width:90px;
+}
+
+#name{
+	background-color:rgba(0,0,150,0.15);
+}
+
+#samplework{
+	background-color:rgba(0,255,0,0.1);
+}
+
+#c1{
+	background-color:rgba(255,50,0,0.1);
+}
+
+#c2{
+	background-color:rgba(255,200,0,0.1);
+}
+
+#c3{
+	background-color:rgba(0,200,255,0.1);
+}
+
+#project1{
+	background-color:rgba(255,0,0,0.2);
+}
+
+#project2{
+	background-color:rgba(255,255,0,0.2);
+}
+
+#project3{
+	background-color:rgba(0,255,255,0.2);
+}
 
 /* middle screen */
-@media (min-width: 768px) and (max-width: 991.9px){
+@media screen and (min-width: 768px) and (max-width: 991px){
   .container{
 	position: relative;
 	width:90%;
@@ -93,7 +130,15 @@ div{
   .col{
 	width:50%;
   }
-  #col3{
+  .selfie{
+	position:absolute;
+	right:10px;
+	top:5px;
+}
+  .selfie img{
+	  width:100px;
+  }
+  #c3{
 	width:100%;  
   }
   #project1{
@@ -108,13 +153,21 @@ div{
 }
 
 /* large screen */
-@media (min-width: 992px){
+@media screen and (min-width: 992px){
   .container{
 	position: relative;
 	width:80%;
   }
   .col{
 	width:33.333%;
+  }
+  .selfie{
+	position:absolute;
+	right:10px;
+	top:5px;
+  }
+  .selfie img{
+	  width:100px;
   }
   #project1{
 	text-align:left;  
