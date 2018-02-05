@@ -1,0 +1,128 @@
+/*
+	Purple Color Scheme
+	#8678FE Light Purple
+	#594FB1 Dark Purple
+	#420173 Deep Dark Purple
+	#ACA2FF Bright Purple
+*/
+
+.font_lato {
+	font-family: 'Lato', sans-serif;
+	line-height: 125%;
+}
+.font_os {
+	font-family: 'Open Sans', sans-serif;
+}
+.font_roboto {
+	font-family: 'Roboto', sans-serif;
+}
+.font_ssp {
+	font-family: 'Source Serif Pro', serif;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Lato', sans-serif;
+	line-height: 125%;
+	color:#420173;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color:#594FB1;
+}
+
+body a{
+	color:#ACA2FF
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+.box{
+	border-width: 1px;
+	border-style: solid;
+    border-color: black;
+	display: block;
+	padding: 10px;
+}
+
+div{
+	display: block;
+}
+
+.row{
+	overflow: hidden;
+	clear: both;
+}
+
+.col{
+	float: left;
+	padding:10px;
+}
+
+.empty{
+	clear: both;
+}
+
+.heading{
+	float: left;
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+}
+
+.selfie{
+	position: absolute;
+	top: 5px;
+	right: 0px;
+}
+
+
+/* middle screen */
+@media (min-width: 768px) and (max-width: 991.9px){
+  .container{
+	position: relative;
+	width:90%;
+  }
+  .col{
+	width:50%;
+  }
+  #col3{
+	width:100%;  
+  }
+  #project1{
+	text-align:left;
+  }
+  #project2{
+	text-align:right; 
+  }
+  #project3{
+	text-align:center;
+  }
+}
+
+/* large screen */
+@media (min-width: 992px){
+  .container{
+	position: relative;
+	width:80%;
+  }
+  .col{
+	width:33.333%;
+  }
+  #project1{
+	text-align:left;  
+  }
+  #project2{
+	text-align: center; 
+  }
+  #project3{
+	text-align:right;
+  }
+}
