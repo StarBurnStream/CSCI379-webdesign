@@ -1,58 +1,88 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Project1a</title>
-		<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto|Source+Serif+Pro" rel="stylesheet">
+		<title>Project1b</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato%7COpen+Sans%7CRoboto%7CSource+Serif+Pro" rel="stylesheet">
 		<link href="css/fonts.css" rel="stylesheet">
-		<link href="css/project1a.css" rel="stylesheet">
+		<link href="css/project1b.css" rel="stylesheet">
+		<link href="css/navbar.css" rel="stylesheet">
 	</head>
 
 	<body>
+	
+		<nav class="navbar navbar-expand navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">Web Portfolio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExample02">
+			<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="Project1b.html">Home<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Project1a.html">Project1a</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://github.com/StarBurnStream/CSCI379-webdesign">Github</a>
+			</li>
+			</ul>
+			<form class="form-inline my-2 my-md-0">
+			<input class="form-control" type="text" placeholder="Search">
+			</form>
+		</div>
+		</nav>
+	
 		<div class="container">
 	
-		<div class="heading">
+		<div class="heading row">
+			<div class="mr-auto">
 			<h1 id="name">Junjie Jiang</h1>
 			jj030@bucknell.edu<br><br><br>
-		</div>
-		<div class="selfie" >
+			</div>
+			<div class="selfie" >
 			<img src="jjj.jpg"  alt="picture">
+			</div>
 		</div>
+		
 
-		<section class="sample" >
-			<div class="box">
+		<section class="sample row" >
+			<div class="box col-12">
 			<h2 id="samplework">Sample Coursework</h2>
 			Course Name: CSCI 379 Web Design<br>
 			Professor: Alan Marchiori<br>
 			Overview: The course is mainly about full stack web design process.
 			<ol start=1>
-				<li><a href="https://github.com/StarBurnStream/CSCI379-webdesign">My Github</a></li>
 				<li><a href="fontfun.html">fontfun</a></li>
-				<li><a href="project1b.html">Project1b</a></li>
+				<li><a href="bootstrapEX1.html">bootstrapEX1</a></li>
+				<li><a href="bootstrapEX2.html">bootstrapEX2</a></li>
 			</ol>
 			</div>
 		</section>
-		<section class="row">
-			<section class="col" id="c1">
+		<div class="row">
+			<section class="col-sm-12 col-md-6 col-lg-4" id="c1">
 				<div class="box">
 				<h3 id="project1" >Project 1</h3>
 				<p>be a block for Sample Coursework with a link to fontfun (Activity 5) and any other links you want to add. Below this row are the sections for each project. Each section contains some text about the project and a label. You can use dummy text for projects 2-3. How the project sections are laid out on the screen is going to depend on the width of the browser window (i.e., responsive design).</p>
 				</div>
 			</section>
-			<section class="col" id="c2">
+			<section class="col-sm-12 col-md-6 col-lg-4" id="c2">
 				<div class="box">
 				<h3 id="project2" >Project 2</h3>
 				<p>be a block for Sample Coursework with a link to fontfun (Activity 5) and any other links you want to add. Below this row are the sections for each project. Each section contains some text about the project and a label. You can use dummy text for projects 2-3. How the project sections are laid out on the screen is going to depend on the width of the browser window (i.e., responsive design).</p>
 				</div>
 			</section>
-			<section class="col" id="c3" >
+			<section class="col-sm-12 col-md-12 col-lg-4" id="c3" >
 				<div class="box">
 				<h3 id="project3" >Project 3</h3>
 				<p>be a block for Sample Coursework with a link to fontfun (Activity 5) and any other links you want to add. Below this row are the sections for each project. Each section contains some text about the project and a label. You can use dummy text for projects 2-3. How the project sections are laid out on the screen is going to depend on the width of the browser window (i.e., responsive design).</p>
 				</div>
 			</section>
-		</section>
+		</div>
 		</div>
 	</body>
 
