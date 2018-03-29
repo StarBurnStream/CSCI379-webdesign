@@ -1,0 +1,31 @@
+*{
+	box-sizing: border-box;
+}
+
+.center{
+	text-align:center;
+}
+
+.container{
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img{
+	width:80%;
+}
+/* middle screen */
+@media screen and (min-width: 768px) and (max-width: 991px){
+	img{
+		width:90%;
+	}
+}
+
+/* large screen */
+@media screen and (min-width: 992px){
+	img{
+		width:100%;
+	}
+
+}
