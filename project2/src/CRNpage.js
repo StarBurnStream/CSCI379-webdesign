@@ -27,6 +27,7 @@ class CRNpage extends Component {
 						"<li>Meeting time: " + result["Meeting Time"] + "</li>" +
 						"<li>Room: " + result.Room + "</li>" +
 						"<li>Course CRN: " + result.CRN + "</li>" +
+						"<li>Course Seats Left: " + result.SeatsAvail + "</li>" +
 						"</ul>"
 					}
 					else{
